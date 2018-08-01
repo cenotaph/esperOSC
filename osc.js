@@ -1,6 +1,6 @@
 const _ = require('lodash')
 const osc = require('node-osc')
-const dictionary = require("lib/sample.json")
+const dictionary = require("./lib/sample.json")
 const keypress = require('keypress')
 const tty = require('tty');
 
@@ -63,8 +63,8 @@ function lookup_and_send(phrase, dict) {
 } 
 
 function listen(d) {
-  console.log('current dictionary is ' + d[0].name)
-  console.log('whole command is ' + build)
+  console.log('current dictionary level starts with "' + d[0].name  + '"')
+  console.log(' -- the command being buit so far is: ' + build)
   process.stdin.on('keypress', function (ch, key) {
     
     if (key && key.ctrl && key.name == 'c') {
