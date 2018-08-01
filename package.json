@@ -1,0 +1,27 @@
+{
+  "name": "esperosc",
+  "version": "0.0.1",
+  "description": "convert text to OSC commands",
+  "main": "osc.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "keypress": "0.2.1", 
+    "lodash": "4.17.10",
+    "node-osc": "2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cenotaph/esperOSC.git"
+  },
+  "author": "John W. Fail",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cenotaph/esperOSC/issues"
+  },
+  "homepage": "https://github.com/cenotaph/esperOSC#readme"
+}
